@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hurt_1.png-371937b0db99b393769098b7aae9b932.stex"
+path="res://.import/Hurt_1.png-6dc2b5126be329523109b98c248a55d0.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Cat/Hurt_1.png"
-dest_files=[ "res://.import/Hurt_1.png-371937b0db99b393769098b7aae9b932.stex" ]
+source_file="res://Sprites/Player/MMTheCat/Hurt_1.png"
+dest_files=[ "res://.import/Hurt_1.png-6dc2b5126be329523109b98c248a55d0.stex" ]
 
 [params]
 

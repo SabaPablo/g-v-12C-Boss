@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Lanza.png-132489faecf55d24f1248f738995d322.stex"
+path="res://.import/Lanza.png-d89e1d0f8783e95527acd3c27071ec34.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Cat/Lanza.png"
-dest_files=[ "res://.import/Lanza.png-132489faecf55d24f1248f738995d322.stex" ]
+source_file="res://Sprites/Player/MMTheCat/Lanza.png"
+dest_files=[ "res://.import/Lanza.png-d89e1d0f8783e95527acd3c27071ec34.stex" ]
 
 [params]
 

@@ -9,8 +9,6 @@
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 32, 224 )
-MAX_SPEED = 300
-JUMP_HEIGTH = 2
 
 [node name="to_next_world" parent="." index="1" instance=ExtResource( 2 )]
 

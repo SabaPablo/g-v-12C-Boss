@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump_4.png-ace80e5adada50da0b2ba6493cbfbb9d.stex"
+path="res://.import/Jump_4.png-2b4a1b0596c512744158c85e6a0e2124.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Cat/Jump_4.png"
-dest_files=[ "res://.import/Jump_4.png-ace80e5adada50da0b2ba6493cbfbb9d.stex" ]
+source_file="res://Sprites/Player/MMTheCat/Jump_4.png"
+dest_files=[ "res://.import/Jump_4.png-2b4a1b0596c512744158c85e6a0e2124.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Walk_0.png-3efbfdaf38716cc7cf7cd6c50db2d369.stex"
+path="res://.import/Walk_0.png-3e73bfd0d9e18d937a01670a651da83b.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Cat/Walk_0.png"
-dest_files=[ "res://.import/Walk_0.png-3efbfdaf38716cc7cf7cd6c50db2d369.stex" ]
+source_file="res://Sprites/Player/MMTheCat/Walk_0.png"
+dest_files=[ "res://.import/Walk_0.png-3e73bfd0d9e18d937a01670a651da83b.stex" ]
 
 [params]
 

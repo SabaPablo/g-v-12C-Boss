@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump0.png-34054d7e9518e3e1f6bdccfdd225fd84.stex"
+path="res://.import/Jump0.png-91c162e8a0c22ca436f5040b919b53f3.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Jump0.png"
-dest_files=[ "res://.import/Jump0.png-34054d7e9518e3e1f6bdccfdd225fd84.stex" ]
+source_file="res://Sprites/Player/Aviator/Jump0.png"
+dest_files=[ "res://.import/Jump0.png-91c162e8a0c22ca436f5040b919b53f3.stex" ]
 
 [params]
 

@@ -1,17 +1,22 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Player/Run1.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/Run2.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/Run3.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/Run7.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/Run4.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Player/Run0.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Player/Idle0.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/Player/Jump0.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Player/Jump1.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Player/Jump4.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Background/Sky.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Background/Sky.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_1.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_2.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_0.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_3.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_4.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Player/MMTheCat/Run_0.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Player/MMTheCat/Run_1.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Player/MMTheCat/Run_2.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_0.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_1.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_2.png" type="Texture" id=17]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -22,50 +27,46 @@ height = 28.0
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Run",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Run_fast",
-"speed": 20.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "Fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Run_low",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "Run_fast",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=3]
+[node name="Player" type="KinematicBody2D" index="0"]
 
-custom_solver_bias = 0.0
-extents = Vector2( 10, 21.4156 )
-
-[node name="Player" type="KinematicBody2D"]
-
+light_mask = 8
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "Visibility", "collision" ]
 GRAVITY = 50.0
 MAX_SPEED = 400
 MIN_SPEED = 50
@@ -75,17 +76,12 @@ ACCELERATIONLEFT = 50
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
+light_mask = 9
 position = Vector2( 0, 4 )
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
-[node name="PlayerAnimatedSprite" type="AnimatedSprite" parent="." index="1"]
-
-frames = SubResource( 2 )
-animation = "Fall"
-playing = true
-
-[node name="Camera2D" type="Camera2D" parent="." index="2"]
+[node name="Camera2D" type="Camera2D" parent="." index="1"]
 
 anchor_mode = 1
 rotating = false
@@ -111,7 +107,7 @@ editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Editor", "Smoothing" ]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="3"]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="2"]
 
 layer = -1
 offset = Vector2( 0, 0 )
@@ -128,7 +124,6 @@ _sections_unfolded = [ "Scroll" ]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
 
-visible = false
 motion_scale = Vector2( 0.2, 0.2 )
 motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 640, 640 )
@@ -136,25 +131,17 @@ _sections_unfolded = [ "Motion" ]
 
 [node name="Sky" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
 
-position = Vector2( 1.67017, -1.67017 )
-texture = ExtResource( 12 )
+texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="Area2D" type="Area2D" parent="." index="4"]
+[node name="PlayerAnimatedSprite" type="AnimatedSprite" parent="." index="3"]
 
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
-
-shape = SubResource( 3 )
-
-[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 2 )
+animation = "Jump"
+frame = 1
+playing = true
+_sections_unfolded = [ "Transform" ]
 
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead_3.png-f4dd499a2aec809f87a5a2d08111d2db.stex"
+path="res://.import/Dead_3.png-28b289aec3b0317cdccebfe837b50e0c.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Cat/Dead_3.png"
-dest_files=[ "res://.import/Dead_3.png-f4dd499a2aec809f87a5a2d08111d2db.stex" ]
+source_file="res://Sprites/Player/MMTheCat/Dead_3.png"
+dest_files=[ "res://.import/Dead_3.png-28b289aec3b0317cdccebfe837b50e0c.stex" ]
 
 [params]
 

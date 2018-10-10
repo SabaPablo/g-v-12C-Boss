@@ -11,6 +11,8 @@ const UP = Vector2(0,-1)
 var motion = Vector2()
 var real_jump = -425 * JUMP_HEIGTH
 var right = true
+var lanza = preload("res://Arrow.tscn")
+var elapsed = 0.0
 
 func _physics_process(delta):
 	var friction = false
@@ -19,6 +21,17 @@ func _physics_process(delta):
 		motion.x = 100
 	else:
 		motion.x = -100
+
+	elapsed += 1
+	if Input.is_action_pressed("throw") and elapsed >= 30:
+		elapsed = 0
+		var newlanza = lanza.instance()
+		newlanza.set_position(Vector2(self.position.x,self.position.y ))
+		newlanza.set_axis_velocity(Vector2(200,-50))
+		get_parent().add_child(newlanza)
+		
+		
+		
 	if Input.is_action_pressed("ui_right"):
 		if right:
 			motion.x = min(MAX_SPEED , motion.x + ACCELERATION)

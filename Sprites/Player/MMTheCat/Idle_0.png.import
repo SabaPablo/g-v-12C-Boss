@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle_0.png-ccbf4fbf5267a58874b58f23108d632f.stex"
+path="res://.import/Idle_0.png-1361c491af6ad7067581e9e06108d856.stex"
 
 [deps]
 
-source_file="res://Sprites/Player/Cat/Idle_0.png"
-dest_files=[ "res://.import/Idle_0.png-ccbf4fbf5267a58874b58f23108d632f.stex" ]
+source_file="res://Sprites/Player/MMTheCat/Idle_0.png"
+dest_files=[ "res://.import/Idle_0.png-1361c491af6ad7067581e9e06108d856.stex" ]
 
 [params]
 
