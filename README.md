@@ -21,26 +21,33 @@ Dirección y fuerza de la lanza : El mouse o un punto en la pantalla marcarán l
 #Niveles
 ----------
 Nivel 1 -Tutorial
+
 Vamos a tener un tutorial el cual vamos nuestro personaje va a tener que cazar un avestruz
 
 Nivel 2 - Rival
+
 Un personaje de otra aldea toma algo tuyo y corres a por él con una lanza
 
 Nivel 3 - Dinos
+
 en las cercanías de tu aldea aparece un dinosaurio el cual intentan ahuyentar para que no destruya tu pueblo . Luego de un tiempo tienes que huir de otro dino mucho más grande que aparenta ser la madre del primero (primera aparición del doble direccionamiento en el juego)
 
 Nivel 4 - Cavernas
-Un topo te cuenta que algo no está bien en el mundo subterráneo y lo sigues por cavernas y cuevas un tanto peligrosas
 
-Rival ???
+Un topo te cuenta que algo no está bien en el mundo subterráneo y lo seguis por cavernas y cuevas un tanto peligrosas
+
+Rival: 
 
 Nivel 5 - Esqueletos
+
 Una maldición levanta esqueletos por doquier los cuales deberás eludirlos y escapar de ahí..
 
 Nivel 6 - Boss
-El chamán es sorprendido por nuestro héroe y comienza la persecución 
+
+El chamán es sorprendido por nuestro héroe y comienza la persecución. Se lo va atacando sin saber que en realidad esta cargando energía para convertirse en  un simil Balrock. Cambia la dirección, ahora el rival nos persigue a nosotros.
 
 Nivel - Extra
+
 La caverna se desploma y se debe escapar de ella a como dé lugar. Ríos subterráneos hacen la salida aún más difícil, caídas de roca,etc.
 
 Créditos
@@ -56,13 +63,30 @@ El juego consistirá en impedir que tu adversario llegue antes a su pueblo con u
 Bonus por lejanía
 Al estar lejos de tu oponente tendrás mayor posibilidad de encontrar elementos que hagan que no sea imposible alcanzar a tu oponente.
 
+
 #MÚSICA
 -----------
 
-???
+- Por nivel ???
 
-# EFECTOS
+#EFECTOS
 --------------
 
-???
+- Salto  
+- Daño
+- Muerte
+- Disparos
+- Efecto particular con la aparición del Balrock (Rugido)
 
+
+##PERSONAJES
+--------------
+
+- Gato Kimar
+- Avestruz
+- Personaje de otra aldea
+- Dinosaurio madre Nymeria
+- Dinosaurio hijo
+- Topo
+- Esqueletos
+- Balrock
