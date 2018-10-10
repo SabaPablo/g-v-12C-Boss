@@ -11,9 +11,9 @@ Tiene un componente de fantasía en los personajes que serán animales con habil
 
 En el camino existirán plataformas y lugares submarinos el cual facilitará o no eludir obstáculos.
 
-Tendrás una cantidad de puntos los cuales se acumularan por camino recorrido y por monedas(puede ser otra cosa ??) que lo encontrarás en caminos
+Tendrás una cantidad de puntos los cuales se acumularan por camino recorrido y por monedas (puede ser otra cosa ??) que lo encontrarás en caminos
 
-El juego consiste en un personaje(gato salvaje) con una gran habilidad en uso de lanza
+El juego consiste en un personaje(gato salvaje) con una gran habilidad en uso de lanza.
 
 Dirección y fuerza de la lanza : El mouse o un punto en la pantalla marcarán la dirección que tendrá con respecto a la posición del personaje, un botón de lanzamiento habilitará una barra de energía el cual marcará la fuerza del lanzamiento
 
@@ -54,7 +54,7 @@ Créditos
 
 
 
-#Multijugador
+#MULTIJUGADOR
 -----------------
 
 El juego tendra una opcion multijugador…. Atrapa y huye 
@@ -79,7 +79,7 @@ Al estar lejos de tu oponente tendrás mayor posibilidad de encontrar elementos 
 - Efecto particular con la aparición del Balrock (Rugido)
 
 
-##PERSONAJES
+#PERSONAJES
 --------------
 
 - Gato Kimar
