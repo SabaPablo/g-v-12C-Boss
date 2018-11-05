@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Barrel of a gun.ogg-401367bdf0db72d050f0061655f61bc5.oggstr"
+
+[deps]
+
+source_file="res://BGMusic/Barrel of a gun.ogg"
+dest_files=[ "res://.import/Barrel of a gun.ogg-401367bdf0db72d050f0061655f61bc5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
