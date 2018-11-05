@@ -59,8 +59,8 @@ _sections_unfolded = [ "Motion" ]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
 
-position = Vector2( 268.872, 213.634 )
-scale = Vector2( 0.3, 0.3 )
+position = Vector2( 355.211, 211.362 )
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 4 )
 _sections_unfolded = [ "Transform" ]
 
