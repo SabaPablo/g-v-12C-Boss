@@ -2,13 +2,13 @@
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Background/Sky.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/MMTheCat/Walk_0.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/MMTheCat/Walk_1.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/MMTheCat/Walk_2.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_0.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_1.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_2.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_1.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_2.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_3.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_0.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_1.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_2.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Player/MMTheCat/Jump_3.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Player/MMTheCat/Jump_4.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Player/MMTheCat/Run_0.png" type="Texture" id=12]
@@ -27,14 +27,14 @@ height = 28.0
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Run",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Run",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
@@ -42,7 +42,7 @@ animations = [ {
 "name": "Fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "Run_low",
 "speed": 5.0
@@ -58,7 +58,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 light_mask = 8
 input_pickable = false
@@ -109,6 +109,7 @@ _sections_unfolded = [ "Editor", "Smoothing" ]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="2"]
 
+editor/display_folded = true
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -140,7 +141,6 @@ _sections_unfolded = [ "Offset", "Transform" ]
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 2 )
 animation = "Jump"
-frame = 1
 playing = true
 _sections_unfolded = [ "Transform" ]
 
