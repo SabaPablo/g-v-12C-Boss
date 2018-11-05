@@ -1,22 +1,21 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Background/Sky.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_0.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_1.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_2.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/MMTheCat/Idle_3.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Player/MMTheCat/Walk_0.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Player/MMTheCat/Walk_1.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/Player/MMTheCat/Walk_2.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Player/MMTheCat/Jump_3.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Player/MMTheCat/Jump_4.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Player/MMTheCat/Run_0.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Player/MMTheCat/Run_1.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Player/MMTheCat/Run_2.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Player/MMTheCat/Jump_0.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/Player/MMTheCat/Jump_1.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/Player/MMTheCat/Jump_2.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_1.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Player/MMTheCat/Walk_2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_0.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_1.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_2.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Player/MMTheCat/Idle_3.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_4.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Player/MMTheCat/Run_0.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Player/MMTheCat/Run_1.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Player/MMTheCat/Run_2.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_0.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_1.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Player/MMTheCat/Jump_2.png" type="Texture" id=16]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -27,32 +26,32 @@ height = 28.0
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "Run",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "Fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "Run_low",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "Run_fast",
 "speed": 25.0
 }, {
-"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 5.0
@@ -107,40 +106,12 @@ editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Editor", "Smoothing" ]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="2"]
-
-editor/display_folded = true
-layer = -1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-scroll_offset = Vector2( 0, 0 )
-scroll_base_offset = Vector2( 0, 0 )
-scroll_base_scale = Vector2( 1, 1 )
-scroll_limit_begin = Vector2( 0, 0 )
-scroll_limit_end = Vector2( 0, 0 )
-scroll_ignore_camera_zoom = true
-_sections_unfolded = [ "Scroll" ]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
-
-motion_scale = Vector2( 0.2, 0.2 )
-motion_offset = Vector2( 0, 0 )
-motion_mirroring = Vector2( 640, 640 )
-_sections_unfolded = [ "Motion" ]
-
-[node name="Sky" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
-
-texture = ExtResource( 2 )
-centered = false
-_sections_unfolded = [ "Offset", "Transform" ]
-
-[node name="PlayerAnimatedSprite" type="AnimatedSprite" parent="." index="3"]
+[node name="PlayerAnimatedSprite" type="AnimatedSprite" parent="." index="2"]
 
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 2 )
 animation = "Jump"
+frame = 2
 playing = true
 _sections_unfolded = [ "Transform" ]
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://to_next_world.tscn" type="PackedScene" id=2]
 [ext_resource path="res://DirtAutoTileSet.tres" type="TileSet" id=3]
 [ext_resource path="res://Balrog.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprites/Background/Sky.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -103,5 +104,32 @@ __meta__ = {
 [node name="Balrog" parent="." index="5" instance=ExtResource( 4 )]
 
 position = Vector2( 1430.98, 350.716 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="6"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = true
+_sections_unfolded = [ "Scroll" ]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 640, 640 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
+
+position = Vector2( 330.659, 159.968 )
+texture = ExtResource( 5 )
 
 
